@@ -1,7 +1,7 @@
 import logging
 from aiogram import types
 
-from keyboards.inline.locationInline import locationMenu, location_callback
+from keyboards.inline.locationInline import locationMenu
 from keyboards.inline.ramadanInline import ramadanMenu
 from keyboards.default.namazKeyboards import namazButtons
 from parsings.prayerTimes import get_prayer_times_for_today, get_prayer_times_for_tomorrow
@@ -39,7 +39,17 @@ async def get_location_inline_keyboards(message: types.Message):
 async def get_ramadan(message: types.Message):
     # logging.info(message)
     await message.answer('Тангланг', reply_markup=namazButtons)
+    
+    # surah = get_surah_section()
+    # for id, value in surah.items():
+    #     await message.answer_audio(value["audio"], caption=f'<b>{value["title"]}</b>')
+    #     await message.answer(value['text'])
+    #     await asyncio.sleep(10)
+    
+    
+    
 
 
-# if __name__ == '__main__':
-#     print(locationParsing)
+
+if __name__ == '__main__':
+    print(get_ramadan())

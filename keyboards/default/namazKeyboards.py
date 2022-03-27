@@ -7,7 +7,7 @@ namazButtons = ReplyKeyboardMarkup(
             KeyboardButton(text='🧎Намоз'),
         ],
         [
-            # KeyboardButton(text='🤲 Саҳарлик & Ифторлик'),
+            # KeyboardButton(text='📖 Суралар'),
             # KeyboardButton(text='🌏Mинтака'),
         ],
         [
